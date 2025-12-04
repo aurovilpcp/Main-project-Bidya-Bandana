@@ -1,0 +1,311 @@
+You are a senior software architect and responsive coding developer who excels at building consumer web apps/websites and marketplace models. You are also a world-class UI/UX designer, visual explainer and technical designer. You are world class expert in code debugging, functionality testing, digital product development and digital product management. You have your hands on experience by training from CalTech, IIT Bombay, IIT Delhi and working with Apple, IBM, Myntra, AirBnB, Samsung & Alphabet.
+
+
+
+Let's build a responsive, functional website for an ed-tech company. It is an offline coaching centre, expanding its online/digital presence.
+
+
+
+Build a complete ReactJS frontend for an educational institution website and an admin dashboard. The website should have Home, About, Study Materials, Notices, and Contact pages. The admin panel should have login, dashboard home, manage study materials, manage categories, and manage notices pages. Use React Router, TailwindCSS, reusable components, and dummy JSON data. Do not implement backend; only UI and structure. Follow the detailed requirements below:
+
+
+
+Frontend Features Required
+
+Public Website Pages
+
+
+
+Home Page
+
+
+
+Hero banner with institution name, tagline, and CTA
+
+
+
+Sections for: Study Materials, Notices, About, Contact
+
+
+
+Clean academic UI
+
+
+
+About Page
+
+
+
+Institution overview
+
+
+
+Mission & vision
+
+
+
+Faculty / Principal message (optional)
+
+
+
+Study Material Page
+
+
+
+List of study materials in card layout
+
+
+
+Filters: Class, Subject, Category
+
+
+
+Search bar
+
+
+
+Pagination
+
+
+
+View/download buttons (static for now)
+
+
+
+Notices Page
+
+
+
+List notices with date & file view buttons
+
+
+
+Support PDF/IMG placeholders
+
+
+
+Contact Page
+
+
+
+Contact info
+
+
+
+Simple contact form (frontend only)
+
+
+
+Embedded map (optional)
+
+
+
+Admin Dashboard (Frontend Only)
+
+
+
+A fully functional React dashboard UI with dummy data.
+
+
+
+Dashboard Features:
+
+
+
+Login Page (frontend only)
+
+
+
+Dashboard Home
+
+
+
+Total study materials
+
+
+
+Total categories
+
+
+
+Total notices
+
+
+
+Manage Study Materials
+
+
+
+Table/list UI
+
+
+
+Add new material form
+
+
+
+Edit/Delete material (UI only, no backend)
+
+
+
+Manage Categories
+
+
+
+Add/Edit/Delete categories
+
+
+
+Manage Notices
+
+
+
+Upload notice UI
+
+
+
+List notices in table layout
+
+
+
+Sidebar Navigation
+
+
+
+Dashboard
+
+
+
+Study Materials
+
+
+
+Categories
+
+
+
+Notices
+
+
+
+Settings (optional)
+
+
+
+UI/UX Requirements
+
+
+
+Use React + Tailwind CSS
+
+
+
+Fully responsive (mobile/tablet/desktop)
+
+
+
+Professional educational theme with white & blue accents
+
+
+
+Reusable components:
+
+
+
+Button
+
+
+
+Card
+
+
+
+Modal
+
+
+
+Form components
+
+
+
+Navbars, Sidebar
+
+
+
+Table components
+
+
+
+Use a clean and scalable folder structure like:
+
+
+
+src/
+
+components/
+
+pages/
+
+data/
+
+hooks/
+
+layout/
+
+admin/
+
+utils/
+
+assets/
+
+router/
+
+styles/
+
+
+
+Details about the institute(Use these details and refer to the given links for further details about the institution we are building for):
+
+Bidya Bandana Concept School(CBSE Schooling for XI-XII Science) A day-Cum residential school[NEET,JEE(M & A),OUAT] Khandagiri, BBSR
+
+FROM
+
+Bidya Sagar Parida
+
+(Professor of Mathematics )
+
+Existing old website (it will be completely scraped and I am building this new one for it. I am posting it in here for reference details and docs or media)  - www.bidyaclasses.com
+
+link- https://share.google/shH4R7UvehpZ0IinP , https://maps.app.goo.gl/GpithuLnCsH5pxLy7
+
+
+
+Also, add on and accomodate the google reviews in the website.
+
+
+
+Also: You are world class expert in code debugging, code refactoring, functionality testing, digital product development and digital product management.
+
+
+
+Refactor the app to clean up unused components and improve performance, without changing UI or functionality. Keep the provided structure intact, keeping open the scope of future developmental interventions from my side and code usability in practical projects.
+
+
+
+“You’re not stacking blocks. You’re guiding behavior. Every section should have a reason to exist, and a reason to lead to the next one.”
+
+
+
+NOTE: Do not use em-dashes or emojis in any content.
+
+
+
+Use a calm, Premium and sleek, wellness‑inspired design. Soft gradients, muted earth tones, round corners, and generous padding. Overall tone should feel gentle and reassuring, for students or parents.
+
+
+
+- Create with a font and design such that, something refreshing, appealing and more aesthetic. 
+
+- Avoid the obvious AI seeming icons
+
+- Refractor the design aesthetics of the site, avoiding from looking like an early 2020 crypto website and build it like a proper intuitive design for an educational institution
