@@ -2,6 +2,7 @@ import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote, CheckCircle } from "lucide-react";
 import generatedLibrary from "@assets/generated_images/students_studying_in_a_modern_library.png";
+import directorPhoto from "@assets/image_1765267969259.png";
 
 export default function About() {
   return (
@@ -60,8 +61,8 @@ export default function About() {
           <Card className="border-none shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="bg-primary p-8 flex flex-col justify-center items-center text-center text-white">
-                <div className="h-32 w-32 rounded-full bg-white/20 mb-4 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Director" className="w-full h-full object-cover" />
+                <div className="h-40 w-40 rounded-full bg-white/20 mb-4 overflow-hidden">
+                  <img src={directorPhoto} alt="Director" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-serif font-bold text-xl mb-1">Bidya Sagar Parida</h3>
                 <p className="text-sm text-white/70">Professor of Mathematics</p>
