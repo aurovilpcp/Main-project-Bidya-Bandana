@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { TopBar } from "./TopBar";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
@@ -9,6 +10,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-secondary selection:text-secondary-foreground">
+      <TopBar />
       <Navbar />
       <main className="flex-grow pt-20">
         {children}

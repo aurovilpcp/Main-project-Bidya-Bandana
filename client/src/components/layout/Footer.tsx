@@ -1,52 +1,53 @@
-import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { GraduationCap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
 import { CONTACT_INFO } from "@/data/mockData";
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="bg-white/10 p-2 rounded-lg">
-                <GraduationCap size={24} className="text-white" />
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
+          
+          {/* Brand Column */}
+          <div className="space-y-6 flex flex-col">
+            <div className="flex items-center justify-center md:justify-start gap-3">
+              <div className="bg-white/10 p-3 rounded-lg border border-white/10">
+                <GraduationCap size={40} className="text-white" />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-lg leading-none">
-                  Bidya Bandana
+                  BNC
                 </span>
-                <span className="text-xs text-white/60 font-medium tracking-wide">
-                  Concept School
+                <span className="text-xs text-white/50 font-medium tracking-widest">
+                  School
                 </span>
               </div>
             </div>
-            <p className="text-white/70 text-sm leading-relaxed">
-              Empowering students with knowledge, discipline, and values. 
-              Premier coaching for NEET, JEE, and CBSE XI-XII.
+            <p className="text-white/60 text-sm leading-relaxed hidden md:block">
+              Empowering students with knowledge, discipline, and values.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start pt-4">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
-                  className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors text-white"
+                  className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors text-white"
                 >
-                  <Icon size={18} />
+                  <Icon size={16} />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Explore Column */}
           <div>
-            <h3 className="font-serif font-bold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-3 text-sm text-white/70">
-              {["About Us", "Admissions", "Study Materials", "Notices", "Gallery", "Contact"].map((item) => (
+            <h3 className="font-serif font-bold text-xl mb-8 text-white">Explore</h3>
+            <ul className="space-y-4">
+              {["About Us", "Upcoming Events", "Blog & News", "FAQ Question", "Testimonial", "Privacy Policy"].map((item) => (
                 <li key={item}>
-                  <Link href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}>
-                    <a className="hover:text-white transition-colors hover:translate-x-1 inline-block transform">
+                  <Link href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}>
+                    <a className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium group">
+                      <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       {item}
                     </a>
                   </Link>
@@ -55,45 +56,56 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Useful Links Column */}
           <div>
-            <h3 className="font-serif font-bold text-lg mb-6">Contact Us</h3>
-            <ul className="space-y-4 text-sm text-white/70">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-0.5 shrink-0 text-accent" />
-                <span>{CONTACT_INFO.address}</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="shrink-0 text-accent" />
-                <span>{CONTACT_INFO.phone}</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="shrink-0 text-accent" />
-                <span>{CONTACT_INFO.email}</span>
-              </li>
+            <h3 className="font-serif font-bold text-xl mb-8 text-white">Useful Links</h3>
+            <ul className="space-y-4">
+              {["Contact Us", "Pricing Plan", "Gallery", "Instructor", "Purchase Guide", "Support"].map((item) => (
+                <li key={item}>
+                  <a href="#" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium group">
+                    <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Newsletter (Visual Only) */}
+          {/* Contact Info Column */}
           <div>
-            <h3 className="font-serif font-bold text-lg mb-6">Newsletter</h3>
-            <p className="text-white/70 text-sm mb-4">
-              Subscribe to get updates on admissions and events.
-            </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-white/10 border border-white/20 rounded-md px-3 py-2 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-accent w-full"
-              />
-              <button className="bg-accent text-accent-foreground px-4 py-2 rounded-md text-sm font-bold hover:bg-accent/90 transition-colors">
-                Join
-              </button>
+            <h3 className="font-serif font-bold text-xl mb-8 text-white">Contact Info</h3>
+            <div className="space-y-6">
+              <div className="flex items-start gap-3">
+                <MapPin size={20} className="mt-0.5 shrink-0 text-accent" />
+                <div className="flex-1">
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Durga Mandap, Near apejay school, Near Hill view residency, Khandagiri - Chandalka Rd. Ghatkia, Bhubaneswar
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-3 ml-8">
+                <a href="tel:+919776280828" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium">
+                  <Phone size={14} className="text-accent" />
+                  +91 9776-280-828
+                </a>
+                <a href="tel:+919776654605" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium">
+                  <Phone size={14} className="text-accent" />
+                  +91 9776-654-605
+                </a>
+                <a href="mailto:bidyaclasses8@gmail.com" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm font-medium">
+                  <Mail size={14} className="text-accent" />
+                  bidyaclasses8@gmail.com
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10 bg-primary/50">
+        <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
           <p>© {new Date().getFullYear()} Bidya Bandana Concept School. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

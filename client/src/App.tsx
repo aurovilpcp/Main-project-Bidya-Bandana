@@ -26,25 +26,25 @@ function Router() {
     <Switch>
       {/* Admin Routes */}
       <Route path="/admin/login" component={AdminLogin} />
-      
+
       <Route path="/admin/dashboard">
         <AdminLayout title="Dashboard">
           <AdminDashboard />
         </AdminLayout>
       </Route>
-      
+
       <Route path="/admin/materials">
         <AdminLayout title="Manage Study Materials">
           <ManageMaterials />
         </AdminLayout>
       </Route>
-      
+
       <Route path="/admin/categories">
         <AdminLayout title="Manage Categories">
           <ManageCategories />
         </AdminLayout>
       </Route>
-      
+
       <Route path="/admin/notices">
         <AdminLayout title="Manage Notices">
           <ManageNotices />
@@ -53,7 +53,9 @@ function Router() {
 
       <Route path="/admin/settings">
         <AdminLayout title="Settings">
-          <div className="text-muted-foreground p-4">Settings page placeholder</div>
+          <div className="text-muted-foreground p-4">
+            Settings page placeholder
+          </div>
         </AdminLayout>
       </Route>
 
@@ -63,25 +65,25 @@ function Router() {
           <Home />
         </Layout>
       </Route>
-      
+
       <Route path="/about">
         <Layout>
           <About />
         </Layout>
       </Route>
-      
+
       <Route path="/study-materials">
         <Layout>
           <StudyMaterials />
         </Layout>
       </Route>
-      
+
       <Route path="/notices">
         <Layout>
           <Notices />
         </Layout>
       </Route>
-      
+
       <Route path="/contact">
         <Layout>
           <Contact />
