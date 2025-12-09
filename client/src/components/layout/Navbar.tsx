@@ -29,8 +29,7 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed left-0 right-0 z-50 transition-all duration-300 border-b",
-        "top-[48px]",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
         scrolled
           ? "bg-background/80 backdrop-blur-md border-border py-3 shadow-sm"
           : "bg-transparent border-transparent py-5"
