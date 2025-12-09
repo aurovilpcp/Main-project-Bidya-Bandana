@@ -74,9 +74,15 @@ export default function About() {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   "Success is not a destination, but a journey. At Bidya Bandana, we guide students through this journey with discipline, dedication, and the right mentorship. Our focus on mathematics and sciences builds a strong analytical foundation that serves students for a lifetime."
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-8">
                   We welcome you to join our family and experience the difference in our teaching methodology.
                 </p>
+                <div className="border-t border-border pt-6">
+                  <p className="text-sm text-muted-foreground font-medium">Best wishes</p>
+                  <p className="font-serif font-bold text-primary text-lg">Bidyasagar Parida</p>
+                  <p className="text-sm text-muted-foreground">Managing Director</p>
+                  <p className="text-xs text-muted-foreground mt-1">MSc(Mathematics), B.Ed, M.Tech(Applied Mathematics)</p>
+                </div>
               </div>
             </div>
           </Card>
