@@ -8,6 +8,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/layout/Layout";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
+import Courses from "@/pages/Courses";
 import StudyMaterials from "@/pages/StudyMaterials";
 import Notices from "@/pages/Notices";
 import Contact from "@/pages/Contact";
@@ -67,6 +68,12 @@ function Router() {
       <Route path="/about">
         <Layout>
           <About />
+        </Layout>
+      </Route>
+      
+      <Route path="/courses">
+        <Layout>
+          <Courses />
         </Layout>
       </Route>
       

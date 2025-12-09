@@ -10,6 +10,7 @@ import logo from "@assets/image_1765267467250.png";
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Courses", href: "/courses" },
   { label: "Study Materials", href: "/study-materials" },
   { label: "Notices", href: "/notices" },
   { label: "Contact", href: "/contact" },
