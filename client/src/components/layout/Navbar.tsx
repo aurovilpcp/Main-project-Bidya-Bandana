@@ -1,10 +1,11 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, GraduationCap, User, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react";
+import { Menu, User, Phone, Mail, Facebook, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { CONTACT_INFO } from "@/data/mockData";
+import logo from "@assets/image_1765267467250.png";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -68,14 +69,12 @@ export function Navbar() {
             : "bg-white border-border/40"
         )}
       >
-        <div className="container mx-auto px-4 flex items-center justify-between py-4">
+        <div className="container mx-auto px-4 flex items-center justify-between py-3">
           <Link href="/">
-            <a className="flex items-center gap-3 group shrink-0">
-              <div className="bg-primary text-primary-foreground p-2 rounded-xl group-hover:scale-105 transition-transform">
-                <GraduationCap size={20} />
-              </div>
+            <a className="flex items-center gap-2 group shrink-0">
+              <img src={logo} alt="Bidya Bandana" className="h-12 w-12 object-contain group-hover:scale-105 transition-transform" />
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-base leading-none text-primary">
+                <span className="font-serif font-bold text-sm leading-none text-primary">
                   Bidya Bandana
                 </span>
                 <span className="text-xs text-muted-foreground font-medium tracking-wide">
